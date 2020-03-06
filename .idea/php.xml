@@ -12,6 +12,7 @@
       <path value="$PROJECT_DIR$/vendor/fontawesome-free/scss" />
       <path value="$PROJECT_DIR$/vendor/fontawesome-free/js" />
       <path value="$PROJECT_DIR$/vendor/fontawesome-free/metadata" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
 </project>
