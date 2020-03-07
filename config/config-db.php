@@ -20,7 +20,7 @@ if ($WEBSITE_ENVIRONMENT =="Development") {
     $password 	= "5M4pW3wxa92DPnv";
     $database 	= "iacademy_db";
     define("APP_ENVIRONMENT", "Production");
-    define("APP_BASE_URL", "https://wwww.iacademy.ibrand.one/iacademy");
+    define("APP_BASE_URL", "https://ibrand.one/iacademy");
     #error_reporting(0); // turn OFF showing errors
     error_reporting(E_ALL ^ E_NOTICE); // turn ON showing errors
 }
