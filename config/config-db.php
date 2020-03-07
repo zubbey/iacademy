@@ -15,12 +15,12 @@ if ($WEBSITE_ENVIRONMENT =="Development") {
     define("APP_BASE_URL", "http://localhost/iacademy");
     error_reporting(E_ALL ^ E_NOTICE); // turn ON showing errors
 } else {
-    $host 		= "us-cdbr-iron-east-04.cleardb.net";
-    $user 		= "bb125d3e36b1f8";
-    $password 	= "8a96c96c";
-    $database 	= "heroku_a7e783913a3f7fe";
+    $host 		= "localhost";
+    $user 		= "iacademy_user";
+    $password 	= "5M4pW3wxa92DPnv";
+    $database 	= "iacademy_db";
     define("APP_ENVIRONMENT", "Production");
-    define("APP_BASE_URL", "https://wwww.ibrandacademy.one");
+    define("APP_BASE_URL", "https://wwww.iacademy.ibrand.one/iacademy");
     #error_reporting(0); // turn OFF showing errors
     error_reporting(E_ALL ^ E_NOTICE); // turn ON showing errors
 }
