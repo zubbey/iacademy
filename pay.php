@@ -116,7 +116,7 @@ if (isset($_SESSION['newCandidate'])){
             ) {
                 swalWithBootstrapButtons.fire(
                     'Cancelled',
-                    'Thank you! God bless you :)',
+                    'Aw!! Come back soon :)',
                     'error'
                 )
             }

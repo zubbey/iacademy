@@ -136,7 +136,7 @@
     });
 
     function reFresh() {
-        location.replace("http://www.ibrandafrica.one/iacademy/");
+        location.replace("http://www.ibrand.one/iacademy/");
     }
 
     function scroll_to_enroll(){

@@ -201,7 +201,10 @@
             title: 'New course added successfully!',
             showConfirmButton: false,
             timer: 3000
-        })
+        });
+        setTimeout(function(){
+            window.location.assign("task");
+        }, 1000);
     }
     if (queryParameters().success === "courseUpdated"){
         Swal.fire({
@@ -210,7 +213,10 @@
             title: 'Update was successfully!',
             showConfirmButton: false,
             timer: 3000
-        })
+        });
+        setTimeout(function(){
+            window.location.assign("task");
+        }, 1000);
     }
     if (queryParameters().success === "deleted"){
         Swal.fire({
@@ -219,7 +225,22 @@
             title: 'Deleted successfully!',
             showConfirmButton: false,
             timer: 3000
-        })
+        });
+        setTimeout(function(){
+            window.location.assign("task");
+        }, 1000);
+    }
+    if (queryParameters().success === "can-deleted"){
+        Swal.fire({
+            position: 'center',
+            icon: 'success',
+            title: 'Deleted!',
+            showConfirmButton: false,
+            timer: 3000
+        });
+        setTimeout(function(){
+            window.location.assign("registered");
+        }, 1000);
     }
     if (queryParameters().error === "couldnotCreate"){
         Swal.fire({
@@ -228,7 +249,10 @@
             title: 'There was an error, please check your connection!',
             showConfirmButton: false,
             timer: 3000
-        })
+        });
+        setTimeout(function(){
+            window.location.assign("task");
+        }, 1000);
     }
     if (queryParameters().error === "notdeleted"){
         Swal.fire({
@@ -237,7 +261,10 @@
             title: 'Something went wrong while deleting! please check your connection and try again.',
             showConfirmButton: false,
             timer: 3000
-        })
+        });
+        setTimeout(function(){
+            window.location.assign("task");
+        }, 1000);
     }
 
 </script>

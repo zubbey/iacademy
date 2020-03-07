@@ -58,6 +58,9 @@ require("./assets/admin_menu.php");
                             <th>
                                 Reg Date
                             </th>
+                            <th>
+                                Action
+                            </th>
                             </thead>
                             <?php
                             $sql = "SELECT * FROM enrollment_form";
@@ -82,6 +85,10 @@ require("./assets/admin_menu.php");
                                     echo "<td>".$row['paid_amount']."</td>";
                                     echo "<td>#".$row['invoice_id']."</td>";
                                     echo "<td>".$row['reg_date']."</td>";
+                                    echo "<td class='text-right d-flex mx-2'>
+                                            <button onclick=\"location.assign('?q=verify&e_id=".$row['id']."')\" class='btn-info rounded'>Verify Student</button>
+                                            <button onclick=\"location.assign('?q=del&e_id=".$row['id']."')\" class='btn-danger rounded ml-3'><i class='nc-icon nc-simple-remove'></i></button>
+                                          </td>";
                                     echo "</tr>";
                                     echo "</tbody>";
                                 }

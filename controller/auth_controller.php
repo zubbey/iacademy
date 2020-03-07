@@ -409,6 +409,18 @@ function editCourse($conn, $course_id, $courseName, $course_image, $course_locat
     }
 }
 
+//delete Candidates
+if (isset($_GET['q']) && $_GET['q']  === 'del') {
+    $id = $_GET['e_id'];
+    $deleteQuery = "DELETE FROM enrollment_form WHERE id = '$id'";
+    $result = mysqli_query($conn, $deleteQuery);
+    if ($result) {
+        mysqli_query($conn, "ALTER TABLE enrollment_form AUTO_INCREMENT = 0");
+        header('location: ?success=can-deleted');
+        exit();
+    }
+}
+
 //delete courses
 if ($_GET['delete_id']) {
     $id = $_GET['delete_id'];
