@@ -1,8 +1,8 @@
 {
-    "title": "Grayscale",
-    "name": "startbootstrap-grayscale",
-    "version": "5.0.3",
-    "description": "A grayscale one page HTML theme for Bootstrap.",
+    "title": "iAcademy Registration System",
+    "name": "iacademy-app",
+    "version": "1.1.2",
+    "description": "A Registration System for IT Training.",
     "keywords": [
         "css",
         "sass",
@@ -11,19 +11,19 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/template-overviews/grayscale",
+    "homepage": "https://ibrandacademy.one/",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/zubbey/iacademy.git",
+        "email": "com.zubbey@hotmail.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
+    "author": "Zubbey",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Zubbey Inncent (http://coloredigit.io/)"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-grayscale.git"
+        "url": "https://github.com/zubbey/iacademy.git"
     },
     "dependencies": {
         "@fortawesome/fontawesome-free": "5.6.3",

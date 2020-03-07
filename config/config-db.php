@@ -20,7 +20,7 @@ if ($WEBSITE_ENVIRONMENT =="Development") {
     $password 	= "8a96c96c";
     $database 	= "heroku_a7e783913a3f7fe";
     define("APP_ENVIRONMENT", "Production");
-    define("APP_BASE_URL", "https://ibrandacademy.one");
+    define("APP_BASE_URL", "https://wwww.ibrandacademy.one");
     #error_reporting(0); // turn OFF showing errors
     error_reporting(E_ALL ^ E_NOTICE); // turn ON showing errors
 }
