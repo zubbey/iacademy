@@ -3,6 +3,10 @@ require ("./components/menu.php");
 if (isset($_SESSION['newCandidate'])){
     $sql = mysqli_query($conn, "INSERT INTO system_logs (log_msg) VALUES ('".$_SESSION['newCandidate']."')");
 }
+if (isset($_GET['mail']) && $_GET['mail'] === 'true'){
+    $_SESSION['fristname'] = $_GET['fname'];
+    $_SESSION['lastname'] = $_GET['lname'];
+}
 ?>
 <script src="https://js.paystack.co/v1/inline.js"></script>
     <section class="banner_area">
