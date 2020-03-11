@@ -8,6 +8,7 @@ if(!isset($_SESSION['admin_session'])){
 }
 
 if (isset($_SESSION['loginlog'])){
+    $_SESSION['newrecord'] = true;
     $sql = mysqli_query($conn, "INSERT INTO system_logs (log_msg) VALUES ('".$_SESSION['loginlog']."')");
     if ($sql){
         unset($_SESSION['loginlog']);
@@ -60,9 +61,10 @@ if (isset($_SESSION['courseDeleted'])){
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="./assets/demo/demo.css" rel="stylesheet" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
-</head>
 
+</head>
 <body class="body">
+<div id="sound"></div>
 <div id="result"></div>
 <div class="wrapper ">
     <div class="sidebar" data-color="white" data-active-color="danger">
@@ -70,12 +72,12 @@ if (isset($_SESSION['courseDeleted'])){
           Tip 1: You can change the color of the sidebar using: data-color="blue | green | orange | red | yellow"
       -->
         <div class="logo">
-            <a href="http://www.creative-tim.com" class="simple-text logo-mini">
+            <a href="#" class="simple-text logo-mini">
                 <div class="logo-image-small">
                     <img src="./assets/img/<?php echo $_SESSION['username']?>.png">
                 </div>
             </a>
-            <a href="http://www.creative-tim.com" class="simple-text logo-normal">
+            <a href="#" class="simple-text logo-normal">
                 <?php echo $_SESSION['username']?>
             </a>
         </div>

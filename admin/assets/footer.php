@@ -69,11 +69,20 @@
         title_el.innerHTML = "IAcademy | Profile";
         profile_nav.classList.add('active');
     }
+
+    function playSound(filename){
+        var mp3Source = '<source src="../sounds/' + filename + '.mp3" type="audio/mpeg">';
+        var oggSource = '<source src="../sounds/' + filename + '.ogg" type="audio/ogg">';
+        var embedSource = '<embed hidden="true" autostart="true" loop="false" src="' + filename +'.mp3">';
+        document.getElementById("sound").innerHTML='<audio autoplay="autoplay">' + mp3Source + oggSource + embedSource + '</audio>';
+    }
+
     setInterval("my_function();",5000);
 
     function my_function(){
         $('#logs').load(document.URL +  ' #logs');
         // window.location = location.href;
+        <!--Notification Sound-->
     }
 
     $(document).ready(function() {

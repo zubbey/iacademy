@@ -17,10 +17,12 @@ function autoReply($email, $fname, $lname, $course){
 
 // Compose a simple HTML email message
     $message = '<html><body>';
-    $message .= '<h1>Hello '.$fname.' '.$lname.', </h1>';
-    $message .= 'We are existed to have you on board! you have enrolled for '.$course.' at iBrand Academy Training Programme."."\r\n"."
-	you can always reach us at registration@ibrandafrica.one or call our hotline @( 08021260000, 08037478593 )."."\r\n"."
-	Our aim is to reply to all emails within 48 hours. At busy times this might take longer. Please be assured though that we are dealing with your request and will get back to you as soon as possible."."\r\n"."
+    $message .= '<div style="text-align: center; width: 100%; margin: auto; padding: 15px">';
+    $message .= '<img id="logo" style="" src="ibrand.one/iacademy/img/iacademy_logo.png" width="127.76" height="48.73" alt="iAcademy logo">';
+    $message .= '</div>';
+    $message .= '<h2>Hello '.$fname.' '.$lname.', </h2>';
+    $message .= '<p>Congratulation on your registration, We are happy to guide you on the journey of '.$course.' <br>For more info kindly send us a mail at registration@ibrandacademy.one or call our hotline. <br><span style="color: #00aabd; font-size: small; font-style: italic;">+234(080) 212-60000
+| +234(080) 374-78593</span></p>
 ';
     $message .= '</body></html>';
 
