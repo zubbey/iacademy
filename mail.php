@@ -22,7 +22,7 @@ function autoReply($email, $fname, $lname, $course){
     $message .= '</div>';
     $message .= '<h2 style="text-align: center">Hey '.$fname.' '.$lname.', </h2>';
     $message .= '<p>Congratulation on your registration, We are happy to guide you on the journey of <strong>'.$course.'</strong></p>';
-    $message .= '<p style="color: #00aabd; text-decoration: none;"><a href="https://ibrand.one/iacademy/pay?enrolled=true&mail=true&fname='.$fname.'&lname='.$lname.'" target="_blank">Click here to complete your registration</a></p>';
+    $message .= '<p style="color: #00aabd; text-decoration: none;"><a href="http://ibrandacademy.one/pay?enrolled=true&mail=true&fname='.$fname.'&lname='.$lname.'" target="_blank">Click here to complete your registration</a></p>';
     $message .= '<hr>';
     $message .= '<p> For more info kindly send us a mail at <span style="color: #00aabd; font-size: small; font-style: italic;">registration@ibrandacademy.one</span> or call our hotline. <br><span style="color: #00aabd; font-size: small; font-style: italic;">+234(080) 212-60000
     | +234(080) 374-78593</span></p>
